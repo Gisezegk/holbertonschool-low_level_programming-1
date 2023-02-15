@@ -4,6 +4,6 @@
 int main(void)
 {       
 	int hello;
-	puts(HELLO);
+	puts($HELLO);
         return (0);
 }
