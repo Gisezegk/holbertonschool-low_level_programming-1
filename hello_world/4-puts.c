@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 /**
  * main - Print a strin using puts
  * Return: always 0
