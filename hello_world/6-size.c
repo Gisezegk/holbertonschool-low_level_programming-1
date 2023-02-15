@@ -1,25 +1,10 @@
 #include<stdio.h>
-/**
- * main - Print a strin using puts
- * Return: always 0
- */
-int main(void)
-{
-char gise[] = "\"Programming is like building a multilingual puzzle";
-puts(gise);
-return (0);
-}
-New
 
-
-Gise Nieves
-  3:59 PM
-File Edit Options Buffers Tools C Help
-#include<stdio.h>
 /**
  * main - compiled
  * Return: always 0
  */
+
 int main(void)
 {
 char charType;
