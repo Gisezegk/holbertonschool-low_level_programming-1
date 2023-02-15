@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "file name?"
+read file
+echo "#include<stdio.h>" > $file
+echo "/**" >> $file
+echo  "* main - " >> $file
+echo  "* Return: " >> $file
+echo  "*/" >> $file
+chmod u+x $file
+echo "Do u want to open VI? (1=yes 2=no)"
+read response
+ if [ "$response" = "1" ];
+ then
+         vi $file
+ else 
+	 echo "Exiting..."
+ fi
