@@ -1,9 +1,10 @@
 #include<stdio.h>
-#define HELLO "\"Programming is like building a multilingual puzzle"
-
-int main(void)
-{       
-	int HELLO;
-	puts(HELLO);
-        return (0);
+int main()
+{
+	//string initialisation
+    char gise[] = "Programming is like building a multilingual puzzle";
+    
+    puts(gise); 
+    
+    return 0;
 }
