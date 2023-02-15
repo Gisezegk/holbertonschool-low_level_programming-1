@@ -4,6 +4,6 @@
 int main(void)
 {       
 	int hello;
-	puts(HELL);
+	puts(HELLO);
         return (0);
 }
