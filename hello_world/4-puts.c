@@ -1,5 +1,10 @@
 #include<stdio.h>
-int main(void) /* W hola mundo */
+/**
+ * main - Print a strin using puts
+ * Return: always 0
+ */
+
+int main(void) 
 {
 char gise[] = "\"Programming is like building a multilingual puzzle";
 
