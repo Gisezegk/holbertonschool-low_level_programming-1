@@ -3,7 +3,7 @@
 
 int main(void)
 {       
-	int hello;
-	puts($HELLO);
+	int HELLO;
+	puts(HELLO);
         return (0);
 }
