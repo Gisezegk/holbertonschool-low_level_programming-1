@@ -12,7 +12,8 @@ int intType;
 long int longintType;
 long long int longlongintType;
 float floatType;
-printf("Size of char: %lu\n byt", sizeof (char));
+
+printf("Size of char: %lu\n", sizeof (char));
 printf("Size of int: %lu\n", sizeof (int));
 printf("Size of long int: %lu\n", sizeof (long int));
 printf("Size of long long int: %lu\n", sizeof (long long int));
