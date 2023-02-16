@@ -5,10 +5,10 @@
 * Return: always 0
 */
 
-int abc = '0';
 
 int main(void)
 {
+int abc = '0';
 	for (abc = '0'; abc <= '9'; abc++)
 	putchar(abc);
 putchar('\n');
