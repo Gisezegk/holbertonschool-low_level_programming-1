@@ -3,8 +3,6 @@
 
 /**
 * jack_bauer - is positive or no.
-* @hor: variable for number
-* @min: variable for minutes
 * Return: 0
 */
 
