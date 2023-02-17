@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdio.h>
 
 /**
 * _abs - is positive or no.
@@ -10,13 +11,13 @@ int _abs(int n)
 {
 	if (n >= 0)
 	{
-		_putchar('0' + n);
+		_putchar(n);
 		return (n);
 	}
 	else
 	{
 		n = n * -1;
-		_putchar('0' + n);
+		_putchar(n);
 		return (n);
 	}
 }
