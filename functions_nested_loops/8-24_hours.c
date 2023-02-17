@@ -3,30 +3,31 @@
 
 /**
 * jack_bauer - is positive or no.
-* @hor, min: variable for number
+* @hor: variable for number
+* @min: variable for minutes
 * Return: 0
 */
 
 
 void jack_bauer(void)
 {
-	int hor, min;
+	int hor = 0;
+	int min = 0;
 
-	while (hor < 24)
+	while (hor != 24)
 	{
-	hor = '0';
-	hor++;
 
-		while (min < 60)
+		for (min = 0; min != 60; min++)
 		{
-		min = '0';
-		min++;
 
 		_putchar((hor / 10) + '0');
 		_putchar((hor % 10) + '0');
 		_putchar(':');
 		_putchar((min / 10) + '0');
-		_putchar((min / 10) + '0');
+		_putchar((min % 10) + '0');
+		_putchar('\n');
 		}
+
+		hor++;
 	}
 }
