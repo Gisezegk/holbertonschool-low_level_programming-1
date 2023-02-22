@@ -11,7 +11,7 @@ void print_line(int n)
 
 	if (n != 0)
 	{
-		c = n * 95;
+		c = n * '_';
 		_putchar(c);
 	}
 	else
