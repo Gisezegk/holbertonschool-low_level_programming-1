@@ -7,12 +7,10 @@
 
 void print_line(int n)
 {
-	int c;
 
 	if (n != 0)
 	{
-		c = n * '_';
-		_putchar(c);
+		_putchar((n * '_') + '0');
 	}
 	else
 	{
