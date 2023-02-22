@@ -1,3 +1,3 @@
 all : 
-	gcc school.c -o school.exe
+	gcc main.c school.c -o school
 
