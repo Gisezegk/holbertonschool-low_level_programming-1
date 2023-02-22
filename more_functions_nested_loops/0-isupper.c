@@ -2,7 +2,11 @@
 #include <stdio.h>
 
 /**
- * int _isupper - print upper
+ * _isupper - print upper
+ *
+ * Return: 1 if Upper
+ *
+ * @c: character v
  */
 
 int _isupper(int c)
