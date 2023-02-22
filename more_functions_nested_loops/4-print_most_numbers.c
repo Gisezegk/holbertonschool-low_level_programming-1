@@ -8,16 +8,16 @@ void print_most_numbers(void)
 {
 	int abc = 0;
 
-	if (abc !=  2 && abc != 4)
 	{
 		for (abc = '0'; abc <= '9'; abc++)
-			{
+			if (abc !=  2 && abc != 4)
+				{
 				_putchar(abc);
+				}
+	
+			else
+			{
 			}
-	}
-	else
-	{
-	}
 	_putchar('\n');
+	}
 }
-
