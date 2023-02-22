@@ -9,15 +9,9 @@
  * @a: character v
  *
  * @b: character numb
- *
- * @c: result
  */
 
 int mul(int a, int b)
 {
-	int c;
-
-	c = a * b;
-
-	return (c);
+	return (a * b);
 }
