@@ -1,1 +1,0 @@
-gcc school.c -o school.exe
