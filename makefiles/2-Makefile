@@ -3,5 +3,7 @@ CC = gcc
 OBJ = main.o school.o
 NAME = school
 
-all :	
-	$(CC) $(OBJ) $(SRC) -c -o $(NAM)  
+all : $(SRC)	
+	$(CC) $(OBJ) $(SRC) -c -o $(NAME)
+	
+	
