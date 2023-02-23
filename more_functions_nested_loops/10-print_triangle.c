@@ -3,6 +3,7 @@
 
 /**
 * print_triangle - patric
+* @size: size
 * Return: Always 0
 */
 
@@ -17,7 +18,7 @@ void print_triangle(int size)
 	{
 		for (b = 0; b < size; b++)
 		{
-			if (b < size-a-1)
+			if (b < size - a - 1)
 			{
 				_putchar(' ');
 			}
