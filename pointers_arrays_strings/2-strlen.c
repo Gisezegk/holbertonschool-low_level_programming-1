@@ -10,12 +10,6 @@
 
 int _strlen(char *s)
 {
-	int size = 0;
-
-	while (*s != '\0')
-	{
-		size++;
-		*s++;
-	}
-	return (size);
+	printf("%d", _strlen(s));
+	return (0);
 }
