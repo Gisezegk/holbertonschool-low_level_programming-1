@@ -3,8 +3,7 @@
 
 /**
 * _puts - set
-* @*s: var s
-* @s: var cjari
+* @str: var cjari
 * Return: always the size
 */
 
