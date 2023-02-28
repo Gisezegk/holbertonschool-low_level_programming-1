@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
-* puts2 - set
+* print_array - set
 * @a: var cjari
 * @n: var
 * Return: always the size
@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 
 	while (c < n)
 	{
-		printf("%d", a[c]);
+		printf("%d ,", a[c]);
 		c++;
 		if (c == n)
 		{
