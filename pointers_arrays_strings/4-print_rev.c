@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _puts - set
+* print_rev - set
 * @s: var cjari
 * Return: always the size
 */
