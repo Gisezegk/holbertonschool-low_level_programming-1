@@ -15,13 +15,12 @@ void print_array(int *a, int n)
 
 	while (c < n)
 	{
+		if (c > n)
+		{
+			printf("%d", a[c]);
+		}
 		printf("%d, ", a[c]);
 		c++;
 	}
-	
-	if (c == n)
-		{
-                        printf("%d", a[c]);
-		}
 	putchar('\n');
 }
