@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
 
 /**
 **_strcpy - given
@@ -15,9 +14,13 @@ char *_strcpy(char *dest, char *src)
 	{
 		fin++;
 	}
-	for (pos = 0; pos < fin; pos++)
+	for (pos = 0; pos <= fin; pos++)
 	{
-		strcpy(dest, src);
+		dest[pos] = src[pos];
+	}
+	if (pos == fin + 1)
+	{
+		dest[pos] = '\0';
 	}
 	return (dest);
 }
