@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * *_strcat - function
+ * _strcat - function
  *
  * @dest: var given
  *
  * @src: other var given
+ *
+ * Return: dest
  *
  */
 
@@ -24,6 +26,6 @@ char *_strcat(char *dest, char *src)
 		cont++;
 		fin++;
 	}
-	
+
 	return (dest);
 }
