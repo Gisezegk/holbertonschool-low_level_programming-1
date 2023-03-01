@@ -2,9 +2,14 @@
 #include <stdio.h>
 
 /**
-**_strcpy - given
-*@src: given var
-*/
+ * _strcpy - s
+ *
+ * Return: always dest
+ *
+ * @dest: given var
+ *
+ * @src: given var
+ */
 
 char *_strcpy(char *dest, char *src)
 {
