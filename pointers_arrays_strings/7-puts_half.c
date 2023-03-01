@@ -4,8 +4,7 @@
 
 /**
 * puts_half - set
-* @a: var cjari
-* @n: var
+* @str: numbers give var
 * Return: always the size
 */
 
@@ -30,5 +29,5 @@ void puts_half(char *str)
 	{
 		_putchar(str[i]);
 	}
-	_putchar('\n');	
+	_putchar('\n');
 }
