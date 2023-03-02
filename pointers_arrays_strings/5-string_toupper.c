@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * @c: count
+ * string_toupper - please
  * @u: string
  *
- * Return:
+ * Return: numb
  */
 
 
