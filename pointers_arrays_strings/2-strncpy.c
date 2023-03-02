@@ -24,10 +24,11 @@ char *_strncpy(char *dest, char *src, int n)
 	for (pos = 0; pos <= fin; pos++)
 	{
 		dest[pos] = src[pos];
-		if (pos >= n)
-		{
-			break;
-		}
-		}
+		fin++;
+	}
+	if (pos >= n)
+	{
+		break;
+	}
 	return (dest);
 }
