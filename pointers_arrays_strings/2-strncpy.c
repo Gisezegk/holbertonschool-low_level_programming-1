@@ -25,5 +25,10 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[pos] = src[pos];
 	}
+	while (pos < n)
+	{
+		dest[pos] = '\0';
+		pos++;
+	}
 	return (dest);
 }
