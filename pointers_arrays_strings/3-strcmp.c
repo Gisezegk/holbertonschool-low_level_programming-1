@@ -4,13 +4,12 @@
 /**
  * _strcmp - s
  *
- * Return: always dest
+ * Return: always d
  *
- * @n: limit
  *
- * @dest: given var
+ * @s1: given var
  *
- * @src: given var
+ * @s2: given var
  */
 
 int _strcmp(char *s1, char *s2)
@@ -31,7 +30,7 @@ int _strcmp(char *s1, char *s2)
 		{
 			d = -15;
 		}
-			cont++;	
+	cont++;
 	}
-	return(d);
+	return (d);
 }
