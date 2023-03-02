@@ -21,15 +21,9 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		fin++;
 	}
-	for (; pos < n; pos++)
+	for (; pos < n && fin >= pos; pos++)
 	{
-		dest[fin] = src[pos];
-		fin++;
-	
-	if (pos >= n)
-	{
-		break;
-	}
+		dest[pos] = src[pos];
 	}
 	return (dest);
 }
