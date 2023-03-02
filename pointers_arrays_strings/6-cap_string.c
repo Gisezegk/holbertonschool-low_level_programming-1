@@ -3,7 +3,6 @@
 /**
  * cap_string - please
  * @u: string
- * @c: always count
  *
  * Return: numb
  */
