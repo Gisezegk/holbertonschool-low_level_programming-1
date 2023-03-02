@@ -10,7 +10,7 @@
 
 char *string_toupper(char *u)
 {
-	int c;
+	int c = 0;
 
 	while (u[c] != '\0')
 	{
