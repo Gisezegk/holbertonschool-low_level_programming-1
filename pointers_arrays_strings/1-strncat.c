@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * _strcat - function
+ * _strncat - function
  *
  * @dest: var given
  *
  * @src: other var given
+ *
+ * @n: limi
  *
  * Return: dest
  *
  */
 
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int fin = 0, cont = 0;
 
@@ -20,15 +22,11 @@ char *_strcat(char *dest, char *src)
 	{
 		fin++;
 	}
-	while (src[cont] < n)
+	while (src[cont] != '\0')
 	{
 		dest[fin] = src[cont];
 		cont++;
 		fin++;
-	}
-	if (src[cont] >= n)
-	{
-		dest[fin] = '\0';
 	}
 
 	return (dest);
