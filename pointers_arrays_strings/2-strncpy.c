@@ -28,7 +28,7 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	if (pos >= n)
 	{
-		break;
+		dest[pos] = '\0';
 	}
 	return (dest);
 }
