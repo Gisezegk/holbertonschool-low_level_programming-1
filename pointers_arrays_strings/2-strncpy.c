@@ -21,14 +21,14 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		fin++;
 	}
-	for (pos = 0; pos <= fin; pos++)
+	for (; pos < n; pos++)
 	{
-		dest[pos] = src[pos];
+		dest[fin] = src[pos];
 		fin++;
 	}
 	if (pos >= n)
 	{
-		dest[pos] = '\0';
+		dest[fin] = '\0';
 	}
 	return (dest);
 }
