@@ -26,11 +26,11 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[fin] = src[cont];
 		cont++;
-	
+
 		if (src[cont] == '\0')
 		{
 			break;
-		}	
+		}
 			fin++;
 		}
 	return (dest);
