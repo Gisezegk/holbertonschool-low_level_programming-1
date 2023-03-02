@@ -16,7 +16,7 @@ char *string_toupper(char *u)
 	{
 		if (u[c] >= 'a' && u[c] <= 'z')
 		{
-			u[c] = u[c] - 32;
+			u[c] = (int)u[c] - 32;
 		}
 		c++;
 	}
