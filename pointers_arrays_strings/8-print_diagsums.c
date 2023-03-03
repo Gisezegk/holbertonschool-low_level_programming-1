@@ -7,5 +7,5 @@ print_diagsums(int *a, int size)
 	int i = size;
 
 
-	printf("hola %d%c", i,a[0]);
+	printf("hola %d%c", i, a[0]);
 }
