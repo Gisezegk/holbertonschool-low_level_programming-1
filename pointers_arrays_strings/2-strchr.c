@@ -15,17 +15,11 @@ char *_strchr(char *s, char c)
 
 	while (cont[s])
 	{
-		cont++;
-	
-	if (cont[s] == c)
+	if (*s == c)
 	{
 		return(s);
 	}
-	else
-	{
-	return ('\0');
+	cont++;
 	}
-	
-	}
-	return(0);
-}
+	return('\0');
+}	
