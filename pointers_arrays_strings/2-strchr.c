@@ -21,5 +21,9 @@ char *_strchr(char *s, char c)
 	}
 	cont++;
 	}
+	if (*s == c)
+	{
+		return(s);
+	}
 	return ('\0');
 }
