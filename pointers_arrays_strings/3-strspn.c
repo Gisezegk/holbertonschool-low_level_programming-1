@@ -1,14 +1,10 @@
 #include "main.h"
 
 /**
- *
  * _strspn - given
- *
  * @s: char
  * @accept: given char
- *
  * Return: the cont
- *
  */
 
 unsigned int _strspn(char *s, char *accept)
