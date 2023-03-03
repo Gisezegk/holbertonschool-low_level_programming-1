@@ -1,14 +1,7 @@
 #include "main.h"
 
-/**
- * @a: given
- *
- * print_chessboard - funciona porfavor
- *
- */
-
-
-void print_chessboard(char (*a)[8])
+void
+print_chessboard(char (*a)[8])
 {
 	int largo = 0, alto = 0;
 
