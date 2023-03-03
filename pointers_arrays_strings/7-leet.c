@@ -17,7 +17,7 @@ char *leet(char *u)
 	while (u[p] != '\0')
 	{
 		p++;
-		while (l[p] != '\0')
+		while (l[c] != '\0')
 		{
 			c++;
 			if (u[p] == l[c])
