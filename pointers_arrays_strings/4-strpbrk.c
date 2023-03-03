@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 
 char
 *_strpbrk(char *s, char *accept)
@@ -11,7 +11,7 @@ char
 		{
 			if (s[cont] == accept[pos])
 			{
-				return (s + pos);
+				return (s + cont);
 			}
 			pos++;
 		}
