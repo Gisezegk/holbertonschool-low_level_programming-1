@@ -5,9 +5,9 @@ char
 {
 	int cont = 0, pos = 0;
 
-	while (s[cont] != '\0')
+	while (s[cont])
 	{
-		while (accept[pos] != '\0')
+		while (accept[pos])
 		{
 			if (s[cont] == accept[pos])
 			{
