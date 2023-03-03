@@ -1,11 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 
-void
-print_diagsums(int *a, int size)
+char 
+*_strstr(char *haystack, char *needle)
 {
-	int i = size;
-
-
-	printf("hola %d%c", i, a[0]);
+	printf("hola %d%c", haystack[0], needle[0]);
+	return (haystack + 5);
 }
