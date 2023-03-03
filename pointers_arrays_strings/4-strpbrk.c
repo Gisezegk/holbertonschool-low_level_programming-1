@@ -15,7 +15,7 @@ char
 			}
 			pos++;
 		}
-	cont++;
+		cont++;
 	}
 	return ('\0');
 }
