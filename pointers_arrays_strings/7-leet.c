@@ -16,7 +16,6 @@ char *leet(char *u)
 
 	while (u[p] != '\0')
 	{
-		p++;
 		while (l[c] != '\0')
 		{
 			c++;
@@ -25,6 +24,7 @@ char *leet(char *u)
 				u[p] = r[c];
 			}
 		}
+		p++;
 	}
 	return (u);
 }
