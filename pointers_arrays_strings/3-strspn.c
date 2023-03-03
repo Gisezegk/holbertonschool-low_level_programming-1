@@ -1,13 +1,7 @@
 #include "main.h"
 
-/**
- * _strspn - given
- * @s: char
- * @accept: given char
- * Return: the cont
- */
-
-unsigned int _strspn(char *s, char *accept)
+unsigned int
+_strspn(char *s, char *accept)
 {
 	int cont = 0, pos = 0, character = 0;
 
@@ -21,7 +15,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		pos++;
 		}
-		character++;
+		cont++;
 		}
 	return (character);
 }
