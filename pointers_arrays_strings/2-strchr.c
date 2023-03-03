@@ -3,7 +3,7 @@
 /**
  * _strchr - epico
  * @c: var
- * @c: tac
+ * @s: tac
  * Return: always var
  *
  */
@@ -17,9 +17,9 @@ char *_strchr(char *s, char c)
 	{
 	if (*s == c)
 	{
-		return(s);
+		return (s);
 	}
 	cont++;
 	}
-	return('\0');
-}	
+	return ('\0');
+}
