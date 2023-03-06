@@ -12,7 +12,9 @@ buscar(int a, int b)
 		return (1);
 	}
 	else
+	{
 		return (buscar(a, b + 1));
+	}
 }
 
 int
@@ -27,6 +29,6 @@ is_prime_number(int n)
 	else if (n > 1)
 	{
 		r = buscar(n, 2);
-			return(r);
 	}
+			return(r);
 }
