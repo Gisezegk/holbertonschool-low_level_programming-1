@@ -1,4 +1,0 @@
-#!/bin/bash
-echo "Prototype?"
-read h
-echo $h >> main.h
