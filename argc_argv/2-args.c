@@ -3,7 +3,8 @@
 int
 main(int argc, char *argv[])
 {
-	int c = 0;	
+	int c = 0;
+
 	for (c = 0; c < argc; c++)
 	{
 	printf("%s\n", argv[c]);
