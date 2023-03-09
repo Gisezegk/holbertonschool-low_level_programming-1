@@ -7,10 +7,10 @@ main(int argc, char *argv[])
 	int n1, n2, m;
 
 
-	if (argc != 3)
+	if (argc =! 3)
 	{
-		printf("Error\n");
-		return (1);
+		printf("0");
+		return (0);
 	}
 
 	n1 = atoi(argv[1]);
