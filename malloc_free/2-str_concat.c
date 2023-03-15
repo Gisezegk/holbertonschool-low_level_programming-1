@@ -13,6 +13,16 @@ char
 	int t = l1 + l2 + 1;
 	char *s = calloc(t, sizeof(char));
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	else if (s2 == NULL)
+	{
+		s2 = "";
+	}
+
+
 	for (c = 0; c < l1; c++)
 	{
 		s[c] = s1[c];
