@@ -19,7 +19,7 @@ char
 		s2 = "";
 	}
 
-	c = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
+	c = malloc(sizeof(char) * (strlen(s1) + n));
 
 	if (c == NULL)
 	{
@@ -31,7 +31,7 @@ char
 		c[l1] = s1[l1];
 	}
 
-	for (l2 = 0; s2[l2] != '\0'; l2++)
+	for (l2 = 0; l2 < n; l2++)
 	{
 		c[l1] = s2[l2];
 		l1++;
