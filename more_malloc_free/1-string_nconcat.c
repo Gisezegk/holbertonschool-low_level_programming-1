@@ -19,7 +19,7 @@ char
 		s2 = "";
 	}
 
-	c = malloc(sizeof(char) * (strlen(s1) + n));
+	c = (char *)malloc(strlen(s1) + n + 1);
 
 	if (c == NULL)
 	{
@@ -36,5 +36,7 @@ char
 		c[l1] = s2[l2];
 		l1++;
 	}
+
+
 	return (c);
 }
