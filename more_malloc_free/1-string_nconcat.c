@@ -3,9 +3,8 @@
 #include "main.h"
 #include <string.h>
 
-
 char
-*str_concat(char *s1, char *s2)
+*string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int l1, l2;
 	char *c;
