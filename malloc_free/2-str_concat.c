@@ -7,32 +7,35 @@
 char
 *str_concat(char *s1, char *s2)
 {
-	int c;
-	int l1 = strlen(s1);
-	int l2 = strlen(s2);
-	int t = l1 + l2 + 1;
-	char *s = calloc(t, sizeof(char));
+	int l1, l2;
+	char *c;
 
 	if (s1 == NULL)
 	{
 		s1 = "";
 	}
-	else if (s2 == NULL)
+
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
 
-
-	for (c = 0; c < l1; c++)
+	c = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
+	
+	if (c == NULL)
 	{
-		s[c] = s1[c];
+		return (NULL);
+	}
+	
+	for (l1 = 0; s1[l1] != '\0'; l1++)
+	{
+		c[l1] = s1[l1];	
 	}
 
-	for (c = 0; c < l2; c++)
+	for (l2 = 0; s2[l2] != '\0'; l2++)
 	{
-		s[l1 + c] = s2[c];
+		c[l1] = s2[l2];
+		l1++;
 	}
-
-	s[t - 1] = '\0';
-	return (s);
+	return (c);
 }
