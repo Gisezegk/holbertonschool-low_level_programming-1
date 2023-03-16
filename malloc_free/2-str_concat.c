@@ -21,15 +21,15 @@ char
 	}
 
 	c = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
-	
+
 	if (c == NULL)
 	{
 		return (NULL);
 	}
-	
+
 	for (l1 = 0; s1[l1] != '\0'; l1++)
 	{
-		c[l1] = s1[l1];	
+		c[l1] = s1[l1];
 	}
 
 	for (l2 = 0; s2[l2] != '\0'; l2++)
