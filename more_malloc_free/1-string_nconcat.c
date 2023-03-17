@@ -19,6 +19,11 @@ char
 		s2 = "";
 	}
 
+	if (s1 == NULL && s2 == NULL)
+	{
+		return (NULL);
+	}
+
 	c = (char *)malloc(strlen(s1) + n + 1);
 
 	if (c == NULL)
