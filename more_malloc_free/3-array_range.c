@@ -23,6 +23,11 @@ int
 		if (c == NULL)
 			return (NULL);
 
+	if (min == max)
+	{
+		c[0] = max;
+	}
+
 	for (cont = 0; min + cont < max; cont++)
 	{
 		c[cont] = cont + min;
