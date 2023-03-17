@@ -24,7 +24,7 @@ char
 		n = strlen(s2);
 	}
 
-	c = (char *)malloc(strlen(s1) + n + 1);
+	c = malloc(sizeof(char) * (strlen(s1) + n + 1));
 
 	if (c == NULL)
 	{
