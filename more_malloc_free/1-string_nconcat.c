@@ -42,5 +42,7 @@ char
 		c[l1+l2] = s2[l2];
 	}
 
+	c[l2 + l1] = '\0';
+
 	return (c);
 }
