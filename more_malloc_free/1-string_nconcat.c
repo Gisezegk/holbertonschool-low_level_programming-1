@@ -19,6 +19,11 @@ char
 		s2 = "";
 	}
 
+	if (n >= strlen(s2))
+	{
+		n = strlen(s2);
+	}
+
 	c = (char *)malloc(strlen(s1) + n + 1);
 
 	if (c == NULL)
@@ -28,18 +33,14 @@ char
 
 	for (l1 = 0; s1[l1] != '\0'; l1++)
 	{
-		if (l1 < strlen(s1))
-		{
-			c[l1] = s1[l1];
-		}
-		else if (l1 >= strlen(s1))
-		{
-			c[l1] = s2[l2];
-			l2++;
-		}		
+		c[l1] = s1[l1];
 	}
+	
 
-	c[l1] = '\0';
+	for (l2 = 0; l2 < n; l2++)
+	{
+		c[l1+l2] = s2[l2];
+	}
 
 	return (c);
 }
