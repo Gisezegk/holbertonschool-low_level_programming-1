@@ -28,14 +28,18 @@ char
 
 	for (l1 = 0; s1[l1] != '\0'; l1++)
 	{
-		c[l1] = s1[l1];
+		if (l1 < strlen(s1))
+		{
+			c[l1] = s1[l1];
+		}
+		else if (l1 >= strlen(s1))
+		{
+			c[l1] = s2[l2];
+			l2++;
+		}		
 	}
 
-	for (l2 = 0; l2 < n; l2++)
-	{
-		c[l1] = s2[l2];
-		l1++;
-	}
+	c[l1] = '\0';
 
 	return (c);
 }
