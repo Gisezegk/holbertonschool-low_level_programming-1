@@ -19,7 +19,7 @@ int
 			;
 		}
 
-	c = malloc(sizeof(int) * cont);
+	c = malloc(sizeof(int) * cont + 1);
 		if (c == NULL)
 			return (NULL);
 
