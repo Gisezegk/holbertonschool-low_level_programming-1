@@ -1,5 +1,5 @@
-#ifndef 0
-#define 0
+#ifndef betty
+#define betty
 
 #define SIZE 1024
 
