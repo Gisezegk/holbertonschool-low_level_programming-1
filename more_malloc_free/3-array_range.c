@@ -15,13 +15,16 @@ int
 	}
 
 	for (cont = 0; min + cont < max; cont++)
-		{
-			;
-		}
+	{
+		;
+	}
 
 	c = malloc(sizeof(int) * (cont + 1));
-		if (c == NULL)
-			return (NULL);
+
+	if (c == NULL)
+	{
+		return (NULL);
+	}
 
 	if (min == max)
 	{
@@ -32,7 +35,5 @@ int
 	{
 		c[cont] = cont + min;
 	}
-
 	return (c);
-
 }
