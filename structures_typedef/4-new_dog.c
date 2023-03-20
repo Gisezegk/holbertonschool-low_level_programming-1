@@ -12,11 +12,18 @@ dog_t
 
 	new->name = malloc(strlen(name) * sizeof(char));
 	if(new->name == NULL)
+	{
+		free(new);
 		return (NULL);
+	}
 
 	new->owner = malloc(strlen(owner) * sizeof(char));
 	if (new->owner == NULL)
+	{
+		free(new->name);
+		free(new);
 		return (NULL);
+	}
 
 	strcpy(new->owner, owner);
 	strcpy(new->name, name);
