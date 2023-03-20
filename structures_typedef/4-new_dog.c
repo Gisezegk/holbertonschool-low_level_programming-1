@@ -10,14 +10,14 @@ dog_t
 	if (new == NULL)
 		return (NULL);
 
-	new->name = malloc(strlen(name) * sizeof(char));
+	new->name = malloc(strlen(name) * sizeof(char) + 1);
 	if(new->name == NULL)
 	{
 		free(new);
 		return (NULL);
 	}
 
-	new->owner = malloc(strlen(owner) * sizeof(char));
+	new->owner = malloc(strlen(owner) * sizeof(char) + 1);
 	if (new->owner == NULL)
 	{
 		free(new->name);
