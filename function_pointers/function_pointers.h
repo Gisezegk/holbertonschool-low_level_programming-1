@@ -1,3 +1,4 @@
+#include <stddef.h>
 #ifndef new
 #define new
 
