@@ -12,7 +12,12 @@ print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(list, int));
-		if (separator != NULL && i != n)
+
+		/*
+		* Siendo n = 5, vos queres que hayan 4 ;, por ende i se tiene que
+		* comparar con 4, asi unicamente va a funcionar cuando i valga 3
+		**/
+		if (separator != NULL && i != n - 1)
 			printf("%s", separator);
 	}
 	va_end(list);
