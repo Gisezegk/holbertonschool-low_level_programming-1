@@ -13,7 +13,7 @@ print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		z = va_arg(list, char *);
-		
+
 		if (z == NULL)
 			printf("(nil)");
 		else
