@@ -1,8 +1,22 @@
 #!/bin/bash
-echo "File?"
-read file
-git add $file
-echo "Commit?"
-read "commit"
-git commit -m $commit
+
+# Pedir el nombre del archivo
+echo "Ingresa el nombre del archivo que quieres subir:"
+read archivo
+
+# Verificar que el archivo existe
+if [ ! -f $archivo ]; then
+    echo "El archivo $archivo no existe."
+    exit 1
+fi
+
+# Pedir el mensaje de commit
+echo "Ingresa el mensaje de commit:"
+read mensaje
+
+# Agregar el archivo y hacer commit
+git add $archivo
+git commit -m "$mensaje"
+
+# Subir los cambios
 git push
