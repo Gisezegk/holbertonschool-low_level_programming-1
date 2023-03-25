@@ -1,6 +1,8 @@
 #!/bin/bash
-git add .
+echo "File?"
+read file
+git add $file
 echo "Commit?"
-read commit
+read "commit"
 git commit -m $commit
 git push
