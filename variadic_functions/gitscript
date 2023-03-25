@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # Pedir el nombre del archivo
-echo "Ingresa el nombre del archivo que quieres subir:"
+echo "File name to upload:"
 read archivo
 
 # Verificar que el archivo existe
 if [ ! -f $archivo ]; then
-    echo "El archivo $archivo no existe."
+    echo "The file $archivo does not exist."
     exit 1
 fi
 
 # Pedir el mensaje de commit
-echo "Ingresa el mensaje de commit:"
+echo "Commit:"
 read mensaje
 
 # Agregar el archivo y hacer commit
